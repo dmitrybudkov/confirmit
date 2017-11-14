@@ -1,0 +1,54 @@
+.catal{
+  background-color: #ffffff;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 15px;
+  border-radius: 4px;
+  &-topic{
+    font-weight: 700;
+  }
+  &-item{
+    &s{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    &-name{
+      text-align: center;
+      line-height: 30px;
+    }
+    &-price{
+      text-align: center;
+      line-height: 30px;
+      &.discount{
+        color: red;
+      }
+    }
+    &-add{
+      line-height: 30px;
+      height: 30px;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-align: center;
+      border-radius: 4px;
+      background: #ebeded;
+      color: #75b727;
+      cursor: pointer;
+      &:hover{
+        color: #fff;
+        background: #75b727;
+      }
+      &.disabled{
+        background: #cccccc!important;
+        color: #ffffff;
+        cursor: default;
+      }
+    }
+    img{
+      height: 110px;
+      width: 110px;
+    }
+  }
+}
